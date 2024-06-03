@@ -1,0 +1,16 @@
+<gridster [options]="options" class="groud">
+
+    <gridster-item class="item" [item]="{cols:10, rows: 4, y: 1, x: 0}">
+        
+       
+        <jqxGrid [selectionmode]="'checkbox'" [source]="source"  [theme]="'material'" [autoheight]="true" [pageable]="true"
+ [altrows]="true" [filterable]="true" [sortable]="true" [columns]="columns" #grid></jqxGrid>
+
+
+
+
+    </gridster-item>
+</gridster>
+
+
+

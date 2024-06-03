@@ -1,0 +1,195 @@
+
+      <div class="loading">
+      </div>
+      <nav class="navbar navbar-fixed-top">
+          <div class="container-fluid">
+            <div class="row">
+              <div class="col-sm-3 top-left-menu">
+                <div class="navbar-header">
+                  <a class="navbar-brand" href="dashboard.html">
+                    <h1 class="text-info">dashboard</h1>
+                  </a>
+      
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav-menu" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                </div>
+                
+              </div>
+                 <!-- search input -->
+              <form id="search" role="search" class="col-sm-3">
+                <div class="input-group">
+                  <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                  <input type="text" class="form-control transition" placeholder="Search...">
+                </div>
+              </form>
+      
+      
+              <!-- notifications part -->
+              <div id="nav-menu" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                  <li>
+                    <div id="btn-notifications" class="btn-group">
+                      <span class="badge">3</span>
+                      <button type="button" class="btn btn-link dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Notifications
+                      </button>
+                      <ul id="notification-list" class="dropdown-menu pull-right">
+                        <li>
+      
+      
+                          <!-- navbar image -->
+                          <a routerLink="#">
+                            <span class="badge"></span>
+                            <img src="assets/imgs/doge.jpg" class="img-circle">
+                            <div class="notification-message">
+                              <strong>Laika</strong>
+                              <p>Hey! How are you?</p>
+                              <em class="since">2h ago</em>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="badge"></span>
+                            <img src="assets/imgs/cat.jpg" class="img-circle">
+                            <div class="notification-message">
+                              <strong>Devil cat</strong>
+                              <p>I will never forgive you...</p>
+                              <em class="since">6h ago</em>
+                            </div>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="#">
+                            <span class="badge"></span>
+                            <img src="assets/imgs/doge.jpg" class="img-circle">
+                            <div class="notification-message">
+                              <strong>Doge</strong>
+                              <p>What are you doing? So scare. It's alright now.</p>
+                              <em class="since">yesterday</em>
+                            </div>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Audience</a>
+                  </li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Finances</a>
+                  </li>
+                  <li routerLink="jqwidgets" class="visible-xs">
+                    <a >Realtime</a>
+                  </li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Projects</a>
+                  </li>
+                  <li role="separator" class="divider visible-xs"></li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Profile</a>
+                  </li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Setting</a>
+                  </li>
+                  <li class="visible-xs">
+                    <a routerLink="#">Logout</a>
+                  </li>
+                </ul>
+      
+                <!-- Options button dropdown -->
+                <div id="nav-profile" class="btn-group pull-right hidden-xs">
+                  <button type="button" class="btn btn-link dropdown-toggle thumbnail" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    <img src="assets/imgs/laika.jpg" class="img-circle">
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a routerLink="#">Profile</a></li>
+                    <li><a routerLink="settings.html">Setting</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a routerLink="#">Logout</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </nav>
+      
+      
+      
+      
+      
+         <!-- dashboard part -->
+       
+            <div id="side-menu" class="col-sm-3 hidden-xs " data-spy="affix" data-offset-top="0">
+              <div class="profile-block">
+                <img src="assets/imgs/jon.png" class="img-circle">
+                <h4 class="profile-title">Jonny Doo <small>@jonnydoo</small></h4>
+              </div>
+      
+              <ul class="nav nav-pills nav-stacked">
+                <li>
+                  <a routerLink="overView" class="transition">
+                    <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                    Overview
+                  </a>
+                </li>
+                <li>
+                  <a routerLink="audience" class="transition">
+                    <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                    Audience
+                  </a>
+                </li>
+                <li>
+                  <a href="#finances-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="finances-opts">
+                    <span class="glyphicon glyphicon-usd" aria-hidden="true"></span>
+                    Finances
+                    <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+                  </a>
+                  <ul class="collapse list-unstyled" id="finances-opts">
+                    <li>
+                      <a routerLink="#" class="transition">
+                        Incomes
+                      </a>
+                    </li>
+                    <li>
+                      <a routerLink="#" class="transition">
+                        Outcomes
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  <a routerLink="jqwidgets" class="transition">
+                    <span class="glyphicon glyphicon-time" aria-hidden="true"></span>
+                    Real time
+                    <span class="badge pull-right">12</span>
+                  </a>
+                </li>
+                <li class="nav-divider"></li>
+                <li>
+                  <a href="#projects-opts" class="transition" role="button" data-toggle="collapse" aria-expanded="false" aria-controls="projects-opts">
+                    <span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>
+                    Projects
+                    <span class="glyphicon glyphicon-menu-left pull-right transition" aria-hidden="true"></span>
+                  </a>
+                  <ul class="collapse list-unstyled" id="projects-opts">
+                    <li>
+                      <a href="#" class="transition">
+                        Free ration nation
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#" class="transition">
+                        Cats going crazy
+                      </a>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+
+  

@@ -1,0 +1,118 @@
+
+<div class="row g-4">
+  <gridster [options]="options" class="groud">
+    <!-- ///////Overall analysis -->
+      <gridster-item class="item" [item]="{cols:6, rows: 4, y: 1, x: 0}">
+        <div class="analysis">
+          <h3>Overall analysis</h3>
+          <app-performance></app-performance>
+        
+  
+        </div>
+      </gridster-item>
+  
+      <!-- ///////Quick stats -->
+      <gridster-item class="item" [item]="{cols: 4, rows: 4, y: 1, x: 6}"> 
+          <div class="card" id="quick-info">
+              <div class="card-block">
+                <h3>Quick stats</h3>
+                <div class="quick-stats">
+                  <strong>Today:</strong>
+                  <span>78</span>
+                </div>
+                <div class="quick-stats">
+                  <strong>This month:</strong>
+                  <span>459</span>
+                </div>
+                <div class="quick-stats">
+                  <strong>All time:</strong>
+                  <span>54k</span>
+                </div>
+                <div class="quick-stats">
+                  <strong>Bounce rate:</strong>
+                  <span>81.08%</span>
+                </div>
+                <div class="quick-stats">
+                  <strong>Session duration:</strong>
+                  <span>00:01:41</span>
+                </div>
+                <div class="quick-stats">
+                  <strong>New session:</strong>
+                  <span>63.86%</span>
+                </div>
+              </div>
+            </div>
+      </gridster-item> 
+      
+      
+  
+      <!-- /////////Performance evaluation -->
+      <gridster-item class="item" [item]="{cols: 5, rows: 4, y: 1, x: 0}">
+         
+          <h3>Performance evaluation</h3>
+          
+          <app-overall></app-overall>
+      </gridster-item>  
+  
+  
+  
+      <!-- //////Ration stock info -->
+      <gridster-item class="item" [item]="{cols: 5, rows: 4, y: 2, x: 0}">
+         
+          <h3>Ration stock info</h3>
+          <app-ration></app-ration>
+      </gridster-item>  
+  
+      <!-- ////Real time information -->
+  
+      <gridster-item class="item" [item]="{cols: 10, rows: 3, y: 9, x: 0}">
+          <div class="card" id="real-time">
+              <div class="card-block">
+              <h2>Real time information</h2>
+                <ul class="list-unstyled">
+                  <li>
+                    Active dogs:
+                    <span class="label label-warning pull-right">255</span>
+                  </li>
+                  <li>
+                    Silo status:
+                    <span class="badge ok pull-right">
+                      <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>
+                    </span>
+                  </li>
+                  <li>
+                    Usage level:
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="width: 25%">
+                        <span class="sr-only">25%</span>
+                      </div>
+                      <div class="progress-bar progress-bar-warning progress-bar-striped active" role="progressbar" aria-valuenow="38" aria-valuemin="0" aria-valuemax="100" style="width: 38%">
+                        <span class="sr-only">38% alocated</span>
+                      </div>
+                      <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="5" aria-valuemin="0" aria-valuemax="100" style="width: 5%">
+                        <span class="sr-only">5% reserved</span>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    Free space:
+                    <span class="pull-right">
+                      32%
+                    </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+      </gridster-item> 
+  
+  
+      <!-- //////Daily usage -->
+      <gridster-item class="item" [item]="{cols: 10, rows: 5, y: 12, x: 0}">
+          <h1>Daily usage</h1>
+          <app-map></app-map>
+      </gridster-item> 
+    </gridster>
+
+</div>
+
+
